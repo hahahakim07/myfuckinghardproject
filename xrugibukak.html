@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Computer Marvel Avengers Theme</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #00ff00;
+            text-align: center;
+            padding-top: 20%;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .retro {
+            font-size: 18px;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #00ff00;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        // Ask for the password
+        var password = prompt("Please enter the password:");
+
+        // Check if the password is correct
+        if (password === "0") {
+            // Redirect to the image after 10 seconds
+            setTimeout(function() {
+                window.location.href = "https://scontent.xx.fbcdn.net/v/t1.15752-9/474495113_1544304172932662_4482045577925533013_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=YLauV8O5GtMQ7kNvgEFQLVu&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gEbRwc4ey5MHDA_62AkzCCuuUwFtqbhocuxX25D8J2JLw&oe=67C38EC0";  // Replace with your image URL
+            }, 3000);
+        } else {
+            // Show an error message if the password is incorrect
+            document.body.innerHTML = "<h1>Access Denied</h1><p>You have entered the wrong password.</p>";
+        }
+    </script>
+
+    <h1>WELCOME VISITOR!</h1>
+    <p class="retro">Loading... Please wait...</p>
+    <p>If you have the correct password, you'll be redirected in a few seconds.</p>
+
+</body>
+</html>
